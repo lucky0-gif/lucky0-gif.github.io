@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Django on DoJo</title>
+    <link>https://lucky0-gif.github.io/tags/django/</link>
+    <description>Recent content in Django on DoJo</description>
+    <generator>Hugo -- 0.146.5</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 15 Nov 2023 09:00:00 +0800</lastBuildDate>
+    <atom:link href="https://lucky0-gif.github.io/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python后端开发指南</title>
+      <link>https://lucky0-gif.github.io/backend/python-backend/</link>
+      <pubDate>Wed, 15 Nov 2023 09:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/backend/python-backend/</guid>
+      <description>全面的Python后端开发指南，从环境配置到Flask和Django框架应用</description>
+    </item>
+  </channel>
+</rss>

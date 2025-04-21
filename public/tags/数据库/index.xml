@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>数据库 on DoJo</title>
+    <link>https://lucky0-gif.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+    <description>Recent content in 数据库 on DoJo</description>
+    <generator>Hugo -- 0.146.5</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 01 Nov 2023 09:00:00 +0800</lastBuildDate>
+    <atom:link href="https://lucky0-gif.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>后端开发入门指南</title>
+      <link>https://lucky0-gif.github.io/backend/getting-started/</link>
+      <pubDate>Wed, 01 Nov 2023 09:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/backend/getting-started/</guid>
+      <description>全面的后端开发入门指南，帮助初学者快速掌握后端开发基础知识</description>
+    </item>
+  </channel>
+</rss>
