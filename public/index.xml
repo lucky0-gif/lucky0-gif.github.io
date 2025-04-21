@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DoJo</title>
+    <link>https://lucky0-gif.github.io/</link>
+    <description>Recent content on DoJo</description>
+    <generator>Hugo -- 0.146.5</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 21 Apr 2025 09:12:39 +0800</lastBuildDate>
+    <atom:link href="https://lucky0-gif.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started</title>
+      <link>https://lucky0-gif.github.io/backend/getting-started/</link>
+      <pubDate>Mon, 21 Apr 2025 09:12:39 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/backend/getting-started/</guid>
+      <description>&lt;p&gt;这是一篇关于后端开发的入门文章。
+以下是主要内容：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;设置开发环境&lt;/li&gt;
+&lt;li&gt;安装必要的工具&lt;/li&gt;
+&lt;li&gt;编写第一个程序&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Nodejs Basics</title>
+      <link>https://lucky0-gif.github.io/backend/nodejs-basics/</link>
+      <pubDate>Mon, 21 Apr 2025 09:12:39 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/backend/nodejs-basics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python Backend</title>
+      <link>https://lucky0-gif.github.io/backend/python-backend/</link>
+      <pubDate>Mon, 21 Apr 2025 09:12:39 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/backend/python-backend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Getting Started</title>
+      <link>https://lucky0-gif.github.io/frontend/getting-started/</link>
+      <pubDate>Mon, 21 Apr 2025 09:12:33 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/frontend/getting-started/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
