@@ -58,7 +58,7 @@ url = "/site-purpose/"
 weight = 50
 
 [[menu.main]]
-identifier = "site-purpose"
+identifier = "message-board"
 name = "留言板"
 url = "/message-board/"
 weight = 60
