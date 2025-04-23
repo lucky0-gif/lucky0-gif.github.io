@@ -2,85 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lucky0-gif.github.io/frontend/getting-started/</loc>
-    <lastmod>2023-11-01T09:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lucky0-gif.github.io/backend/getting-started/</loc>
-    <lastmod>2023-11-01T09:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lucky0-gif.github.io/backend/nodejs-basics/</loc>
-    <lastmod>2023-11-08T09:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lucky0-gif.github.io/backend/python-backend/</loc>
-    <lastmod>2023-11-15T09:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lucky0-gif.github.io/</loc>
-    <lastmod>2023-11-30T08:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lucky0-gif.github.io/dev-tools/</loc>
-    <lastmod>2023-11-30T08:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lucky0-gif.github.io/data-science/</loc>
-    <lastmod>2023-11-25T08:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lucky0-gif.github.io/mobile-dev/</loc>
-    <lastmod>2023-11-20T08:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lucky0-gif.github.io/categories/backend/</loc>
-    <lastmod>2023-11-15T09:00:00+08:00</lastmod>
+    <loc>https://lucky0-gif.github.io/latest-records/first-article/</loc>
+    <lastmod>2025-04-22T21:00:00+08:00</lastmod>
   </url><url>
     <loc>https://lucky0-gif.github.io/categories/</loc>
-    <lastmod>2023-11-15T09:00:00+08:00</lastmod>
+    <lastmod>2025-04-22T21:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://lucky0-gif.github.io/tags/django/</loc>
-    <lastmod>2023-11-15T09:00:00+08:00</lastmod>
+    <loc>https://lucky0-gif.github.io/</loc>
+    <lastmod>2025-04-22T21:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://lucky0-gif.github.io/tags/flask/</loc>
-    <lastmod>2023-11-15T09:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lucky0-gif.github.io/tags/python/</loc>
-    <lastmod>2023-11-15T09:00:00+08:00</lastmod>
+    <loc>https://lucky0-gif.github.io/categories/latest-records/</loc>
+    <lastmod>2025-04-22T21:00:00+08:00</lastmod>
   </url><url>
     <loc>https://lucky0-gif.github.io/tags/</loc>
-    <lastmod>2023-11-15T09:00:00+08:00</lastmod>
+    <lastmod>2025-04-22T21:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://lucky0-gif.github.io/tags/%E5%90%8E%E7%AB%AF/</loc>
-    <lastmod>2023-11-15T09:00:00+08:00</lastmod>
+    <loc>https://lucky0-gif.github.io/tags/%E5%86%99%E4%BD%9C/</loc>
+    <lastmod>2025-04-22T21:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://lucky0-gif.github.io/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2023-11-15T09:00:00+08:00</lastmod>
+    <loc>https://lucky0-gif.github.io/latest-records/</loc>
+    <lastmod>2025-04-22T21:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://lucky0-gif.github.io/tags/express/</loc>
-    <lastmod>2023-11-08T09:00:00+08:00</lastmod>
+    <loc>https://lucky0-gif.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2025-04-22T21:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://lucky0-gif.github.io/tags/javascript/</loc>
-    <lastmod>2023-11-08T09:00:00+08:00</lastmod>
+    <loc>https://lucky0-gif.github.io/tags/%E8%B5%B7%E7%82%B9/</loc>
+    <lastmod>2025-04-22T21:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://lucky0-gif.github.io/tags/node.js/</loc>
-    <lastmod>2023-11-08T09:00:00+08:00</lastmod>
+    <loc>https://lucky0-gif.github.io/site-purpose/</loc>
+    <lastmod>2025-04-01T08:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://lucky0-gif.github.io/tags/css/</loc>
-    <lastmod>2023-11-01T09:00:00+08:00</lastmod>
+    <loc>https://lucky0-gif.github.io/my-footprints/</loc>
+    <lastmod>2025-04-01T08:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://lucky0-gif.github.io/categories/frontend/</loc>
-    <lastmod>2023-11-01T09:00:00+08:00</lastmod>
+    <loc>https://lucky0-gif.github.io/message-board/</loc>
+    <lastmod>2025-04-01T08:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://lucky0-gif.github.io/tags/html/</loc>
-    <lastmod>2023-11-01T09:00:00+08:00</lastmod>
+    <loc>https://lucky0-gif.github.io/featured-diary/</loc>
+    <lastmod>2025-04-01T08:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://lucky0-gif.github.io/tags/%E5%85%A5%E9%97%A8/</loc>
-    <lastmod>2023-11-01T09:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lucky0-gif.github.io/tags/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2023-11-01T09:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lucky0-gif.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2023-11-01T09:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lucky0-gif.github.io/frontend/</loc>
-    <lastmod>2023-11-01T08:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lucky0-gif.github.io/backend/</loc>
-    <lastmod>2023-11-01T08:00:00+08:00</lastmod>
+    <loc>https://lucky0-gif.github.io/plans-and-reflections/</loc>
+    <lastmod>2025-04-01T08:00:00+08:00</lastmod>
   </url>
 </urlset>
