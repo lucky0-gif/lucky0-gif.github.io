@@ -28,37 +28,37 @@ name = "twitter"
 url = "https://twitter.com/"
 
 [[menu.main]]
-identifier = "前端开发"
-name = "前端开发"
-url = "/frontend/"
+identifier = "featured-diary"
+name = "精选日记"
+url = "/featured-diary/"
 weight = 10
 
 [[menu.main]]
-identifier = "后端开发"
-name = "后端开发"
-url = "/backend/"
+identifier = "latest-records"
+name = "最新记录"
+url = "/latest-records/"
 weight = 20
 
 [[menu.main]]
-identifier = "移动开发"
-name = "移动开发"
-url = "/mobile-dev/"
+identifier = "my-footprints"
+name = "我的足迹"
+url = "/my-footprints/"
 weight = 30
 
 [[menu.main]]
-identifier = "数据科学"
-name = "数据科学"
-url = "/data-science/"
+identifier = "plans-and-reflections"
+name = "计划与回顾"
+url = "/plans-and-reflections/"
 weight = 40
 
 [[menu.main]]
-identifier = "开发工具"
-name = "开发工具"
-url = "/dev-tools/"
+identifier = "site-purpose"
+name = "创站初衷"
+url = "/site-purpose/"
 weight = 50
 
 [[menu.main]]
-identifier = "归档"
-name = "归档"
-url = "/archives/"
+identifier = "site-purpose"
+name = "留言板"
+url = "/message-board/"
 weight = 60
