@@ -6,97 +6,27 @@
     <description>Recent content in Tags on DoJo</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 15 Nov 2023 09:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 22 Apr 2025 21:00:00 +0800</lastBuildDate>
     <atom:link href="https://lucky0-gif.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Django</title>
-      <link>https://lucky0-gif.github.io/tags/django/</link>
-      <pubDate>Wed, 15 Nov 2023 09:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/tags/django/</guid>
+      <title>写作</title>
+      <link>https://lucky0-gif.github.io/tags/%E5%86%99%E4%BD%9C/</link>
+      <pubDate>Tue, 22 Apr 2025 21:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/tags/%E5%86%99%E4%BD%9C/</guid>
       <description></description>
     </item>
     <item>
-      <title>Flask</title>
-      <link>https://lucky0-gif.github.io/tags/flask/</link>
-      <pubDate>Wed, 15 Nov 2023 09:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/tags/flask/</guid>
+      <title>生活记录</title>
+      <link>https://lucky0-gif.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Tue, 22 Apr 2025 21:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</guid>
       <description></description>
     </item>
     <item>
-      <title>Python</title>
-      <link>https://lucky0-gif.github.io/tags/python/</link>
-      <pubDate>Wed, 15 Nov 2023 09:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>后端</title>
-      <link>https://lucky0-gif.github.io/tags/%E5%90%8E%E7%AB%AF/</link>
-      <pubDate>Wed, 15 Nov 2023 09:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/tags/%E5%90%8E%E7%AB%AF/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>教程</title>
-      <link>https://lucky0-gif.github.io/tags/%E6%95%99%E7%A8%8B/</link>
-      <pubDate>Wed, 15 Nov 2023 09:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/tags/%E6%95%99%E7%A8%8B/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Express</title>
-      <link>https://lucky0-gif.github.io/tags/express/</link>
-      <pubDate>Wed, 08 Nov 2023 09:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/tags/express/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>JavaScript</title>
-      <link>https://lucky0-gif.github.io/tags/javascript/</link>
-      <pubDate>Wed, 08 Nov 2023 09:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Node.js</title>
-      <link>https://lucky0-gif.github.io/tags/node.js/</link>
-      <pubDate>Wed, 08 Nov 2023 09:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/tags/node.js/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CSS</title>
-      <link>https://lucky0-gif.github.io/tags/css/</link>
-      <pubDate>Wed, 01 Nov 2023 09:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/tags/css/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>HTML</title>
-      <link>https://lucky0-gif.github.io/tags/html/</link>
-      <pubDate>Wed, 01 Nov 2023 09:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/tags/html/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>入门</title>
-      <link>https://lucky0-gif.github.io/tags/%E5%85%A5%E9%97%A8/</link>
-      <pubDate>Wed, 01 Nov 2023 09:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/tags/%E5%85%A5%E9%97%A8/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>前端</title>
-      <link>https://lucky0-gif.github.io/tags/%E5%89%8D%E7%AB%AF/</link>
-      <pubDate>Wed, 01 Nov 2023 09:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/tags/%E5%89%8D%E7%AB%AF/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>数据库</title>
-      <link>https://lucky0-gif.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
-      <pubDate>Wed, 01 Nov 2023 09:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <title>起点</title>
+      <link>https://lucky0-gif.github.io/tags/%E8%B5%B7%E7%82%B9/</link>
+      <pubDate>Tue, 22 Apr 2025 21:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/tags/%E8%B5%B7%E7%82%B9/</guid>
       <description></description>
     </item>
   </channel>
