@@ -15,5 +15,12 @@
       <guid>https://lucky0-gif.github.io/featured-diary/n8n-notes/</guid>
       <description>记录我与自动化工具 n8n 的第一次亲密接触，从好奇到动手，关于探索、实现与创造的起点</description>
     </item>
+    <item>
+      <title>从这里开始</title>
+      <link>https://lucky0-gif.github.io/latest-records/first-article/</link>
+      <pubDate>Tue, 22 Apr 2025 21:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/latest-records/first-article/</guid>
+      <description>写给这个空间的第一句话，关于起步、迟疑与终于开始</description>
+    </item>
   </channel>
 </rss>
