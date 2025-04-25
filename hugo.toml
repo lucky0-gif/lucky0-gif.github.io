@@ -53,8 +53,8 @@ weight = 40
 
 [[menu.main]]
 identifier = "site-purpose"
-name = "创站初衷"
-url = "/site-purpose/"
+name = "关于我"
+url = "/about-me/"
 weight = 50
 
 [[menu.main]]
