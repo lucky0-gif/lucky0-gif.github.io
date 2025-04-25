@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>n8n 笔记 | DoJo</title>
+<meta name="keywords" content="自动化工具, 效率提升, 实践记录">
+<meta name="description" content="记录我与自动化工具 n8n 的第一次亲密接触，从好奇到动手，关于探索、实现与创造的起点">
+<meta name="author" content="">
+<link rel="canonical" href="https://lucky0-gif.github.io/featured-diary/n8n-notes/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css"  rel="preload stylesheet" as="style">
+<link rel="icon" href="https://lucky0-gif.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lucky0-gif.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lucky0-gif.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lucky0-gif.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lucky0-gif.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://lucky0-gif.github.io/featured-diary/n8n-notes/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://lucky0-gif.github.io/featured-diary/n8n-notes/">
+  <meta property="og:site_name" content="DoJo">
+  <meta property="og:title" content="n8n 笔记">
+  <meta property="og:description" content="记录我与自动化工具 n8n 的第一次亲密接触，从好奇到动手，关于探索、实现与创造的起点">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="featured-diary">
+    <meta property="article:published_time" content="2025-04-22T21:00:00+08:00">
+    <meta property="article:modified_time" content="2025-04-22T21:00:00+08:00">
+    <meta property="article:tag" content="自动化工具">
+    <meta property="article:tag" content="效率提升">
+    <meta property="article:tag" content="实践记录">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="n8n 笔记">
+<meta name="twitter:description" content="记录我与自动化工具 n8n 的第一次亲密接触，从好奇到动手，关于探索、实现与创造的起点">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Featured-Diaries",
+      "item": "https://lucky0-gif.github.io/featured-diary/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "n8n 笔记",
+      "item": "https://lucky0-gif.github.io/featured-diary/n8n-notes/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "n8n 笔记",
+  "name": "n8n 笔记",
+  "description": "记录我与自动化工具 n8n 的第一次亲密接触，从好奇到动手，关于探索、实现与创造的起点",
+  "keywords": [
+    "自动化工具", "效率提升", "实践记录"
+  ],
+  "articleBody": "我的n8n学习笔记：从零开始的自动化之旅 初识n8n - 2024年2月5日 今天我终于决定尝试一下这个朋友一直在推荐的工具——n8n。据说它可以帮我自动化很多重复性工作，而且完全免费开源。作为一个经常被各种琐事淹没的普通人，我确实需要这样的工具来解放自己。\nn8n全称是\"node-eight-node\"，读作\"n-eight-n\"。它是一个工作流自动化平台，可以连接各种应用和服务，让它们协同工作。我理解的简单说法是：它就像是一个数字世界的搭积木，你可以用它创建各种自动化流程，将不同的服务连接起来，让电脑自动完成原本需要人工干预的任务。\n安装过程 今天尝试安装了n8n，比我想象的要简单：\n首先，我下载了桌面版（从官网n8n.io下载） 安装过程很顺利，就像安装普通软件一样 安装完成后，系统自动打开了浏览器，显示了n8n的界面 备注：也可以用Docker或npm安装，但作为新手，桌面版最简单。\n# 如果你懂一点命令行，也可以用npm安装 npm install n8n -g n8n start # 或者用Docker docker run -it --rm --name n8n -p 5678:5678 n8nio/n8n n8n基础概念 - 2024年2月6日 今天花了几个小时了解n8n的基本概念，记录一下便于我以后复习：\n核心概念 工作流(Workflow)：整个自动化流程，由多个节点组成 节点(Node)：工作流中的一个操作单元，比如\"发送邮件\"、“获取数据\"等 触发器(Trigger)：启动工作流的条件，如定时、收到邮件、网页事件等 连接(Connection)：节点之间的连线，表示数据流向 界面布局 左侧：节点库和创建的工作流列表 中间：工作流设计区域 右侧：节点配置面板 笔记：界面非常直观，拖拽操作让我这个新手也能快速上手。\n我的第一个工作流：每日提醒 - 2024年2月7日 决定从一个简单的案例开始——创建一个每日提醒工作流。这个工作流会在每天早上8点发送一封包含今日待办事项的邮件给我。\n步骤记录 创建新工作流，取名\"每日提醒”\n添加一个\"Schedule\"触发器节点\n设置为每天早上8:00触发 时区设置为Asia/Shanghai 添加一个\"Google Sheets\"节点\n连接我的Google账号（需要授权） 选择包含我待办事项的表格 配置为\"读取\"操作 添加一个\"Function\"节点处理数据\n// 筛选今天的待办事项 const today = new Date().toISOString().split('T')[0]; const todayTasks = items.filter(item =\u003e item.json.date === today); // 格式化邮件内容 let emailBody = `今日待办事项 (${today})`; if (todayTasks.length === 0) { emailBody += '今天没有待办事项，享受轻松的一天吧！'; } else { todayTasks.forEach(task =\u003e { emailBody += `${task.json.task} - 优先级: ${task.json.priority}`; }); } emailBody += ''; return [{ json: { subject: `今日待办事项 - ${today}`, content: emailBody } }]; 添加\"Send Email\"节点\n配置我的邮箱SMTP设置 收件人设为我自己的邮箱 主题使用Function节点输出的subject 内容使用Function节点输出的content 连接各节点：Schedule → Google Sheets → Function → Send Email\n保存并激活工作流\n测试结果：成功！我收到了一封包含今天待办事项的邮件。这就是我的第一个工作流，虽然简单但非常实用。\nn8n的高级特性 - 2024年2月10日 今天深入研究了n8n的一些高级特性，发现它比我想象的强大得多：\n条件执行 学会了使用\"IF\"节点创建条件分支。例如，我可以根据待办事项的优先级决定是发邮件还是发短信提醒：\nIF节点配置：\r条件：{{$node[\"Function\"].json[\"priority\"] === \"高\"}}\r- 成立时：执行发送短信节点\r- 不成立时：执行发送邮件节点 错误处理 发现了\"Error Trigger\"节点，可以在工作流出错时捕获错误并执行特定操作，比如发送通知。这对于维护稳定的工作流非常重要。\n执行模式 n8n有多种执行模式：\n单次执行：手动触发一次 定时执行：按计划定期执行 Webhook执行：响应外部请求时执行 笔记：对于关键工作流，最好添加错误处理和通知机制。\n实际案例：网站监控 - 2024年2月15日 今天我创建了一个更复杂的工作流——监控我关注的几个网站是否有更新，如果有，就发送通知给我。这个工作流包含了更多高级概念：\n工作流设计 Schedule节点：每4小时执行一次\nHTTP Request节点：访问目标网站\n方法：GET URL：https://example.com/news 认证：不需要（公开网页） HTML Extract节点：提取页面内容\n选择器：article.news-item 提取内容：标题、日期、链接 Function节点：检查是否有新内容\n// 读取上次检查的结果 const fs = require('fs'); const path = require('path'); // 数据存储路径 const dataPath = path.join(__dirname, 'last_check.json'); // 尝试读取上次的数据 let lastResults = []; try { if (fs.existsSync(dataPath)) { lastResults = JSON.parse(fs.readFileSync(dataPath, 'utf8')); } } catch (error) { console.error('Error reading last results:', error); } // 当前结果 const currentResults = items.map(item =\u003e item.json); // 查找新内容 const newItems = currentResults.filter(current =\u003e { return !lastResults.some(last =\u003e last.title === current.title); }); // 保存当前结果为下次比较基准 try { fs.writeFileSync(dataPath, JSON.stringify(currentResults), 'utf8'); } catch (error) { console.error('Error writing results:', error); } // 如果有新内容，传递给下一个节点 if (newItems.length \u003e 0) { return newItems.map(item =\u003e ({ json: item })); } // 没有新内容，返回空数组 return []; IF节点：检查是否有新内容\n条件：{{$node[“Function”].json !== undefined}} Send Email节点：通知有新内容\n使用模板构建邮件内容，列出所有新文章 遇到的问题和解决方案 问题：最初HTTP Request节点无法正确获取某些网站的内容 解决：添加了User-Agent头，模拟正常浏览器访问：\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36 问题：有时网站结构变化导致HTML Extract失败 解决：使用更通用的选择器，并添加错误处理节点\n心得：这个工作流帮我节省了大量时间，不用频繁刷新网站查看更新了。\nn8n与其他系统集成 - 2024年2月20日 今天研究了n8n如何与其他系统集成，发现它支持惊人数量的第三方服务！以下是我测试过的几个：\n1. 集成Slack 创建了一个工作流，每当我的博客有新评论时，自动发送通知到Slack频道：\nWordPress节点：监听新评论 Slack节点：发送消息到特定频道 需要创建Slack App并获取API Token 格式化消息，包含评论者、内容和链接 2. 集成CRM系统 将新客户信息自动同步到CRM系统：\nGoogle Forms节点：收集潜在客户信息 HubSpot节点：创建新联系人 映射表单字段到CRM字段 设置默认值和标签 3. 集成支付系统 监控新订单并处理：\nStripe节点：监听新支付事件 Function节点：处理订单数据 Send Email节点：发送确认邮件 Google Sheets节点：记录订单信息 笔记：n8n的真正威力在于它的集成能力。目前它支持280+种集成，几乎覆盖了所有主流服务。\n安全和性能优化 - 2024年2月25日 随着我的工作流越来越多，开始关注安全性和性能问题：\n安全最佳实践 使用环境变量存储敏感信息\n创建.env文件存储API密钥 在节点中使用{{$env.API_KEY}}引用 设置访问控制\n启用基本认证 配置用户名和密码 数据加密\n使用HTTPS 加密存储的凭证 性能优化 减少节点数量\n合并相似功能的节点 使用Function节点代替多个转换节点 批量处理\n使用\"Split In Batches\"和\"Merge\"节点处理大量数据 设置超时和重试\n为不稳定的服务添加重试机制 设置合理的超时时间 笔记：随着依赖n8n的程度越来越高，安全性变得尤为重要。\n实际案例：内容聚合器 - 2024年3月5日 最近我创建了一个内容聚合器工作流，它从多个来源收集内容，过滤、整理后发送给我。这是我目前最复杂的工作流：\n工作流设计 Schedule节点：每天早上7点执行\nHTTP Request节点组：从多个来源获取数据\nRSS源 API接口 网页抓取 Merge节点：合并所有来源的内容\nFunction节点：内容去重和过滤\n// 去除重复内容 const uniqueItems = []; const seenTitles = new Set(); for (const item of items) { // 标准化标题用于比较 const normalizedTitle = item.json.title.toLowerCase().trim(); if (!seenTitles.has(normalizedTitle)) { seenTitles.add(normalizedTitle); uniqueItems.push(item); } } // 过滤掉不包含关键词的内容 const keywords = ['人工智能', '自动化', '工作流', 'n8n']; const filteredItems = uniqueItems.filter(item =\u003e { const content = (item.json.title + ' ' + item.json.description).toLowerCase(); return keywords.some(keyword =\u003e content.includes(keyword.toLowerCase())); }); // 按发布时间排序 filteredItems.sort((a, b) =\u003e { const dateA = new Date(a.json.pubDate || a.json.date); const dateB = new Date(b.json.pubDate || b.json.date); return dateB - dateA; // 降序排列 }); // 只保留最新的10条 return filteredItems.slice(0, 10).map(item =\u003e ({ json: item })); HTML节点：生成漂亮的HTML摘要\n// 生成HTML摘要 let html = `今日精选内容 生成时间: ${new Date().toLocaleString('zh-CN')}\n`; items.forEach(item =\u003e { html += ` ",
+  "wordCount" : "747",
+  "inLanguage": "en",
+  "datePublished": "2025-04-22T21:00:00+08:00",
+  "dateModified": "2025-04-22T21:00:00+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lucky0-gif.github.io/featured-diary/n8n-notes/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DoJo",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lucky0-gif.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://lucky0-gif.github.io/" accesskey="h" title="DoJo (Alt + H)">DoJo</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://lucky0-gif.github.io/featured-diary/" title="精选日记">
+                    <span>精选日记</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lucky0-gif.github.io/latest-records/" title="最新记录">
+                    <span>最新记录</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lucky0-gif.github.io/my-footprints/" title="我的足迹">
+                    <span>我的足迹</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lucky0-gif.github.io/plans-and-reflections/" title="计划与回顾">
+                    <span>计划与回顾</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lucky0-gif.github.io/about-me/" title="关于我">
+                    <span>关于我</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lucky0-gif.github.io/message-board/" title="留言板">
+                    <span>留言板</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://lucky0-gif.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://lucky0-gif.github.io/featured-diary/">Featured-Diaries</a></div>
+    <h1 class="post-title entry-hint-parent">
+      n8n 笔记
+    </h1>
+    <div class="post-description">
+      记录我与自动化工具 n8n 的第一次亲密接触，从好奇到动手，关于探索、实现与创造的起点
+    </div>
+    <div class="post-meta"><span title='2025-04-22 21:00:00 +0800 CST'>April 22, 2025</span>&nbsp;·&nbsp;4 min
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="我的n8n学习笔记从零开始的自动化之旅">我的n8n学习笔记：从零开始的自动化之旅<a hidden class="anchor" aria-hidden="true" href="#我的n8n学习笔记从零开始的自动化之旅">#</a></h1>
+<h2 id="初识n8n---2024年2月5日">初识n8n - 2024年2月5日<a hidden class="anchor" aria-hidden="true" href="#初识n8n---2024年2月5日">#</a></h2>
+<p>今天我终于决定尝试一下这个朋友一直在推荐的工具——n8n。据说它可以帮我自动化很多重复性工作，而且完全免费开源。作为一个经常被各种琐事淹没的普通人，我确实需要这样的工具来解放自己。</p>
+<p>n8n全称是&quot;node-eight-node&quot;，读作&quot;n-eight-n&quot;。它是一个工作流自动化平台，可以连接各种应用和服务，让它们协同工作。我理解的简单说法是：它就像是一个数字世界的搭积木，你可以用它创建各种自动化流程，将不同的服务连接起来，让电脑自动完成原本需要人工干预的任务。</p>
+<h3 id="安装过程">安装过程<a hidden class="anchor" aria-hidden="true" href="#安装过程">#</a></h3>
+<p>今天尝试安装了n8n，比我想象的要简单：</p>
+<ol>
+<li>首先，我下载了桌面版（从官网n8n.io下载）</li>
+<li>安装过程很顺利，就像安装普通软件一样</li>
+<li>安装完成后，系统自动打开了浏览器，显示了n8n的界面</li>
+</ol>
+<p>备注：也可以用Docker或npm安装，但作为新手，桌面版最简单。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 如果你懂一点命令行，也可以用npm安装</span>
+</span></span><span style="display:flex;"><span>npm install n8n -g
+</span></span><span style="display:flex;"><span>n8n start
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 或者用Docker</span>
+</span></span><span style="display:flex;"><span>docker run -it --rm --name n8n -p 5678:5678 n8nio/n8n
+</span></span></code></pre></div><h2 id="n8n基础概念---2024年2月6日">n8n基础概念 - 2024年2月6日<a hidden class="anchor" aria-hidden="true" href="#n8n基础概念---2024年2月6日">#</a></h2>
+<p>今天花了几个小时了解n8n的基本概念，记录一下便于我以后复习：</p>
+<h3 id="核心概念">核心概念<a hidden class="anchor" aria-hidden="true" href="#核心概念">#</a></h3>
+<ol>
+<li><strong>工作流(Workflow)</strong>：整个自动化流程，由多个节点组成</li>
+<li><strong>节点(Node)</strong>：工作流中的一个操作单元，比如&quot;发送邮件&quot;、&ldquo;获取数据&quot;等</li>
+<li><strong>触发器(Trigger)</strong>：启动工作流的条件，如定时、收到邮件、网页事件等</li>
+<li><strong>连接(Connection)</strong>：节点之间的连线，表示数据流向</li>
+</ol>
+<h3 id="界面布局">界面布局<a hidden class="anchor" aria-hidden="true" href="#界面布局">#</a></h3>
+<ul>
+<li>左侧：节点库和创建的工作流列表</li>
+<li>中间：工作流设计区域</li>
+<li>右侧：节点配置面板</li>
+</ul>
+<p>笔记：界面非常直观，拖拽操作让我这个新手也能快速上手。</p>
+<h2 id="我的第一个工作流每日提醒---2024年2月7日">我的第一个工作流：每日提醒 - 2024年2月7日<a hidden class="anchor" aria-hidden="true" href="#我的第一个工作流每日提醒---2024年2月7日">#</a></h2>
+<p>决定从一个简单的案例开始——创建一个每日提醒工作流。这个工作流会在每天早上8点发送一封包含今日待办事项的邮件给我。</p>
+<h3 id="步骤记录">步骤记录<a hidden class="anchor" aria-hidden="true" href="#步骤记录">#</a></h3>
+<ol>
+<li>
+<p>创建新工作流，取名&quot;每日提醒&rdquo;</p>
+</li>
+<li>
+<p>添加一个&quot;Schedule&quot;触发器节点</p>
+<ul>
+<li>设置为每天早上8:00触发</li>
+<li>时区设置为Asia/Shanghai</li>
+</ul>
+</li>
+<li>
+<p>添加一个&quot;Google Sheets&quot;节点</p>
+<ul>
+<li>连接我的Google账号（需要授权）</li>
+<li>选择包含我待办事项的表格</li>
+<li>配置为&quot;读取&quot;操作</li>
+</ul>
+</li>
+<li>
+<p>添加一个&quot;Function&quot;节点处理数据</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// 筛选今天的待办事项
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">today</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date().<span style="color:#a6e22e">toISOString</span>().<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;T&#39;</span>)[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">todayTasks</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">items</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">item</span> =&gt; <span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">date</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">today</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 格式化邮件内容
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">emailBody</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`&lt;h2&gt;今日待办事项 (</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">today</span><span style="color:#e6db74">}</span><span style="color:#e6db74">)&lt;/h2&gt;&lt;ul&gt;`</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">todayTasks</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">emailBody</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;&lt;li&gt;今天没有待办事项，享受轻松的一天吧！&lt;/li&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">todayTasks</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">task</span> =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">emailBody</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`&lt;li&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">task</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">task</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> - 优先级: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">task</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">priority</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/li&gt;`</span>;
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">emailBody</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;&lt;/ul&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> [{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">json</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">subject</span><span style="color:#f92672">:</span> <span style="color:#e6db74">`今日待办事项 - </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">today</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">content</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">emailBody</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}];
+</span></span></code></pre></div></li>
+<li>
+<p>添加&quot;Send Email&quot;节点</p>
+<ul>
+<li>配置我的邮箱SMTP设置</li>
+<li>收件人设为我自己的邮箱</li>
+<li>主题使用Function节点输出的subject</li>
+<li>内容使用Function节点输出的content</li>
+</ul>
+</li>
+<li>
+<p>连接各节点：Schedule → Google Sheets → Function → Send Email</p>
+</li>
+<li>
+<p>保存并激活工作流</p>
+</li>
+</ol>
+<p>测试结果：成功！我收到了一封包含今天待办事项的邮件。这就是我的第一个工作流，虽然简单但非常实用。</p>
+<h2 id="n8n的高级特性---2024年2月10日">n8n的高级特性 - 2024年2月10日<a hidden class="anchor" aria-hidden="true" href="#n8n的高级特性---2024年2月10日">#</a></h2>
+<p>今天深入研究了n8n的一些高级特性，发现它比我想象的强大得多：</p>
+<h3 id="条件执行">条件执行<a hidden class="anchor" aria-hidden="true" href="#条件执行">#</a></h3>
+<p>学会了使用&quot;IF&quot;节点创建条件分支。例如，我可以根据待办事项的优先级决定是发邮件还是发短信提醒：</p>
+<pre tabindex="0"><code>IF节点配置：
+条件：{{$node[&#34;Function&#34;].json[&#34;priority&#34;] === &#34;高&#34;}}
+- 成立时：执行发送短信节点
+- 不成立时：执行发送邮件节点
+</code></pre><h3 id="错误处理">错误处理<a hidden class="anchor" aria-hidden="true" href="#错误处理">#</a></h3>
+<p>发现了&quot;Error Trigger&quot;节点，可以在工作流出错时捕获错误并执行特定操作，比如发送通知。这对于维护稳定的工作流非常重要。</p>
+<h3 id="执行模式">执行模式<a hidden class="anchor" aria-hidden="true" href="#执行模式">#</a></h3>
+<p>n8n有多种执行模式：</p>
+<ul>
+<li>单次执行：手动触发一次</li>
+<li>定时执行：按计划定期执行</li>
+<li>Webhook执行：响应外部请求时执行</li>
+</ul>
+<p>笔记：对于关键工作流，最好添加错误处理和通知机制。</p>
+<h2 id="实际案例网站监控---2024年2月15日">实际案例：网站监控 - 2024年2月15日<a hidden class="anchor" aria-hidden="true" href="#实际案例网站监控---2024年2月15日">#</a></h2>
+<p>今天我创建了一个更复杂的工作流——监控我关注的几个网站是否有更新，如果有，就发送通知给我。这个工作流包含了更多高级概念：</p>
+<h3 id="工作流设计">工作流设计<a hidden class="anchor" aria-hidden="true" href="#工作流设计">#</a></h3>
+<ol>
+<li>
+<p><strong>Schedule节点</strong>：每4小时执行一次</p>
+</li>
+<li>
+<p><strong>HTTP Request节点</strong>：访问目标网站</p>
+<ul>
+<li>方法：GET</li>
+<li>URL：https://example.com/news</li>
+<li>认证：不需要（公开网页）</li>
+</ul>
+</li>
+<li>
+<p><strong>HTML Extract节点</strong>：提取页面内容</p>
+<ul>
+<li>选择器：article.news-item</li>
+<li>提取内容：标题、日期、链接</li>
+</ul>
+</li>
+<li>
+<p><strong>Function节点</strong>：检查是否有新内容</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// 读取上次检查的结果
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;fs&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;path&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 数据存储路径
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">dataPath</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">join</span>(<span style="color:#a6e22e">__dirname</span>, <span style="color:#e6db74">&#39;last_check.json&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 尝试读取上次的数据
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lastResults</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">existsSync</span>(<span style="color:#a6e22e">dataPath</span>)) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">lastResults</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">readFileSync</span>(<span style="color:#a6e22e">dataPath</span>, <span style="color:#e6db74">&#39;utf8&#39;</span>));
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;Error reading last results:&#39;</span>, <span style="color:#a6e22e">error</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 当前结果
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentResults</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">items</span>.<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">item</span> =&gt; <span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">json</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 查找新内容
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newItems</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">currentResults</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">current</span> =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">lastResults</span>.<span style="color:#a6e22e">some</span>(<span style="color:#a6e22e">last</span> =&gt; <span style="color:#a6e22e">last</span>.<span style="color:#a6e22e">title</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">current</span>.<span style="color:#a6e22e">title</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 保存当前结果为下次比较基准
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">writeFileSync</span>(<span style="color:#a6e22e">dataPath</span>, <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">currentResults</span>), <span style="color:#e6db74">&#39;utf8&#39;</span>);
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;Error writing results:&#39;</span>, <span style="color:#a6e22e">error</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 如果有新内容，传递给下一个节点
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">newItems</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">newItems</span>.<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">item</span> =&gt; ({ <span style="color:#a6e22e">json</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">item</span> }));
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 没有新内容，返回空数组
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">return</span> [];
+</span></span></code></pre></div></li>
+<li>
+<p><strong>IF节点</strong>：检查是否有新内容</p>
+<ul>
+<li>条件：{{$node[&ldquo;Function&rdquo;].json !== undefined}}</li>
+</ul>
+</li>
+<li>
+<p><strong>Send Email节点</strong>：通知有新内容</p>
+<ul>
+<li>使用模板构建邮件内容，列出所有新文章</li>
+</ul>
+</li>
+</ol>
+<h3 id="遇到的问题和解决方案">遇到的问题和解决方案<a hidden class="anchor" aria-hidden="true" href="#遇到的问题和解决方案">#</a></h3>
+<ol>
+<li>
+<p><strong>问题</strong>：最初HTTP Request节点无法正确获取某些网站的内容
+<strong>解决</strong>：添加了User-Agent头，模拟正常浏览器访问：</p>
+<pre tabindex="0"><code>User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36
+</code></pre></li>
+<li>
+<p><strong>问题</strong>：有时网站结构变化导致HTML Extract失败
+<strong>解决</strong>：使用更通用的选择器，并添加错误处理节点</p>
+</li>
+</ol>
+<p>心得：这个工作流帮我节省了大量时间，不用频繁刷新网站查看更新了。</p>
+<h2 id="n8n与其他系统集成---2024年2月20日">n8n与其他系统集成 - 2024年2月20日<a hidden class="anchor" aria-hidden="true" href="#n8n与其他系统集成---2024年2月20日">#</a></h2>
+<p>今天研究了n8n如何与其他系统集成，发现它支持惊人数量的第三方服务！以下是我测试过的几个：</p>
+<h3 id="1-集成slack">1. 集成Slack<a hidden class="anchor" aria-hidden="true" href="#1-集成slack">#</a></h3>
+<p>创建了一个工作流，每当我的博客有新评论时，自动发送通知到Slack频道：</p>
+<ol>
+<li><strong>WordPress节点</strong>：监听新评论</li>
+<li><strong>Slack节点</strong>：发送消息到特定频道
+<ul>
+<li>需要创建Slack App并获取API Token</li>
+<li>格式化消息，包含评论者、内容和链接</li>
+</ul>
+</li>
+</ol>
+<h3 id="2-集成crm系统">2. 集成CRM系统<a hidden class="anchor" aria-hidden="true" href="#2-集成crm系统">#</a></h3>
+<p>将新客户信息自动同步到CRM系统：</p>
+<ol>
+<li><strong>Google Forms节点</strong>：收集潜在客户信息</li>
+<li><strong>HubSpot节点</strong>：创建新联系人
+<ul>
+<li>映射表单字段到CRM字段</li>
+<li>设置默认值和标签</li>
+</ul>
+</li>
+</ol>
+<h3 id="3-集成支付系统">3. 集成支付系统<a hidden class="anchor" aria-hidden="true" href="#3-集成支付系统">#</a></h3>
+<p>监控新订单并处理：</p>
+<ol>
+<li><strong>Stripe节点</strong>：监听新支付事件</li>
+<li><strong>Function节点</strong>：处理订单数据</li>
+<li><strong>Send Email节点</strong>：发送确认邮件</li>
+<li><strong>Google Sheets节点</strong>：记录订单信息</li>
+</ol>
+<p>笔记：n8n的真正威力在于它的集成能力。目前它支持280+种集成，几乎覆盖了所有主流服务。</p>
+<h2 id="安全和性能优化---2024年2月25日">安全和性能优化 - 2024年2月25日<a hidden class="anchor" aria-hidden="true" href="#安全和性能优化---2024年2月25日">#</a></h2>
+<p>随着我的工作流越来越多，开始关注安全性和性能问题：</p>
+<h3 id="安全最佳实践">安全最佳实践<a hidden class="anchor" aria-hidden="true" href="#安全最佳实践">#</a></h3>
+<ol>
+<li>
+<p><strong>使用环境变量存储敏感信息</strong></p>
+<ul>
+<li>创建<code>.env</code>文件存储API密钥</li>
+<li>在节点中使用<code>{{$env.API_KEY}}</code>引用</li>
+</ul>
+</li>
+<li>
+<p><strong>设置访问控制</strong></p>
+<ul>
+<li>启用基本认证</li>
+<li>配置用户名和密码</li>
+</ul>
+</li>
+<li>
+<p><strong>数据加密</strong></p>
+<ul>
+<li>使用HTTPS</li>
+<li>加密存储的凭证</li>
+</ul>
+</li>
+</ol>
+<h3 id="性能优化">性能优化<a hidden class="anchor" aria-hidden="true" href="#性能优化">#</a></h3>
+<ol>
+<li>
+<p><strong>减少节点数量</strong></p>
+<ul>
+<li>合并相似功能的节点</li>
+<li>使用Function节点代替多个转换节点</li>
+</ul>
+</li>
+<li>
+<p><strong>批量处理</strong></p>
+<ul>
+<li>使用&quot;Split In Batches&quot;和&quot;Merge&quot;节点处理大量数据</li>
+</ul>
+</li>
+<li>
+<p><strong>设置超时和重试</strong></p>
+<ul>
+<li>为不稳定的服务添加重试机制</li>
+<li>设置合理的超时时间</li>
+</ul>
+</li>
+</ol>
+<p>笔记：随着依赖n8n的程度越来越高，安全性变得尤为重要。</p>
+<h2 id="实际案例内容聚合器---2024年3月5日">实际案例：内容聚合器 - 2024年3月5日<a hidden class="anchor" aria-hidden="true" href="#实际案例内容聚合器---2024年3月5日">#</a></h2>
+<p>最近我创建了一个内容聚合器工作流，它从多个来源收集内容，过滤、整理后发送给我。这是我目前最复杂的工作流：</p>
+<h3 id="工作流设计-1">工作流设计<a hidden class="anchor" aria-hidden="true" href="#工作流设计-1">#</a></h3>
+<ol>
+<li>
+<p><strong>Schedule节点</strong>：每天早上7点执行</p>
+</li>
+<li>
+<p><strong>HTTP Request节点组</strong>：从多个来源获取数据</p>
+<ul>
+<li>RSS源</li>
+<li>API接口</li>
+<li>网页抓取</li>
+</ul>
+</li>
+<li>
+<p><strong>Merge节点</strong>：合并所有来源的内容</p>
+</li>
+<li>
+<p><strong>Function节点</strong>：内容去重和过滤</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// 去除重复内容
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">uniqueItems</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">seenTitles</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">item</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">items</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 标准化标题用于比较
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">normalizedTitle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">toLowerCase</span>().<span style="color:#a6e22e">trim</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">seenTitles</span>.<span style="color:#a6e22e">has</span>(<span style="color:#a6e22e">normalizedTitle</span>)) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">seenTitles</span>.<span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">normalizedTitle</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">uniqueItems</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">item</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 过滤掉不包含关键词的内容
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">keywords</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;人工智能&#39;</span>, <span style="color:#e6db74">&#39;自动化&#39;</span>, <span style="color:#e6db74">&#39;工作流&#39;</span>, <span style="color:#e6db74">&#39;n8n&#39;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">filteredItems</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">uniqueItems</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">item</span> =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">title</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">description</span>).<span style="color:#a6e22e">toLowerCase</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">keywords</span>.<span style="color:#a6e22e">some</span>(<span style="color:#a6e22e">keyword</span> =&gt; <span style="color:#a6e22e">content</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#a6e22e">keyword</span>.<span style="color:#a6e22e">toLowerCase</span>()));
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 按发布时间排序
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">filteredItems</span>.<span style="color:#a6e22e">sort</span>((<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">dateA</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date(<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">pubDate</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">date</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">dateB</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date(<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">pubDate</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">date</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">dateB</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">dateA</span>; <span style="color:#75715e">// 降序排列
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 只保留最新的10条
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">filteredItems</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>).<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">item</span> =&gt; ({ <span style="color:#a6e22e">json</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">item</span> }));
+</span></span></code></pre></div></li>
+<li>
+<p><strong>HTML节点</strong>：生成漂亮的HTML摘要</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// 生成HTML摘要
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">html</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`&lt;h1&gt;今日精选内容&lt;/h1&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&lt;p&gt;生成时间: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">new</span> Date().<span style="color:#a6e22e">toLocaleString</span>(<span style="color:#e6db74">&#39;zh-CN&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/p&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&lt;hr&gt;`</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">items</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">item</span> =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">html</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  &lt;div class=&#34;item&#34;&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &lt;h2&gt;&lt;a href=&#34;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">link</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">title</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/a&gt;&lt;/h2&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &lt;p class=&#34;date&#34;&gt;发布于: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">new</span> Date(<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">pubDate</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">date</span>).<span style="color:#a6e22e">toLocaleString</span>(<span style="color:#e6db74">&#39;zh-CN&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/p&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &lt;p class=&#34;description&#34;&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">description</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">summary</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/p&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &lt;p class=&#34;source&#34;&gt;来源: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">source</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39;未知&#39;</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/p&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &lt;hr&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  &lt;/div&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  `</span>;
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> [{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">json</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">html</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">html</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}];
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Send Email节点</strong>：发送HTML摘要邮件</p>
+</li>
+</ol>
+<h3 id="效果评价">效果评价<a hidden class="anchor" aria-hidden="true" href="#效果评价">#</a></h3>
+<p>这个工作流运行了一周，效果超出预期：</p>
+<ul>
+<li>节省了我每天大约30分钟的信息筛选时间</li>
+<li>内容质量高，相关性强</li>
+<li>排版美观，阅读体验好</li>
+</ul>
+<p>优化点：考虑添加机器学习模型进行内容分类和推荐。</p>
+<h2 id="团队协作与分享---2024年3月15日">团队协作与分享 - 2024年3月15日<a hidden class="anchor" aria-hidden="true" href="#团队协作与分享---2024年3月15日">#</a></h2>
+<p>今天和团队成员分享了我创建的几个工作流，记录一下经验：</p>
+<h3 id="导出和分享工作流">导出和分享工作流<a hidden class="anchor" aria-hidden="true" href="#导出和分享工作流">#</a></h3>
+<ol>
+<li>
+<p><strong>导出工作流</strong></p>
+<ul>
+<li>在工作流页面点击&quot;导出&quot;按钮</li>
+<li>选择&quot;导出为JSON&quot;</li>
+<li>保存文件</li>
+</ul>
+</li>
+<li>
+<p><strong>导入工作流</strong></p>
+<ul>
+<li>在工作流页面点击&quot;导入&quot;按钮</li>
+<li>选择JSON文件</li>
+<li>调整节点连接和配置</li>
+</ul>
+</li>
+<li>
+<p><strong>分享最佳实践</strong></p>
+<ul>
+<li>使用明确的命名规则</li>
+<li>添加注释说明每个节点的作用</li>
+<li>创建文档说明工作流的目的和配置</li>
+</ul>
+</li>
+</ol>
+<h3 id="团队工作流示例客户反馈处理">团队工作流示例：客户反馈处理<a hidden class="anchor" aria-hidden="true" href="#团队工作流示例客户反馈处理">#</a></h3>
+<p>与市场团队合作创建了一个客户反馈处理工作流：</p>
+<ol>
+<li>
+<p><strong>Google Forms节点</strong>：收集客户反馈</p>
+</li>
+<li>
+<p><strong>Function节点</strong>：分析反馈情绪</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// 简单的情绪分析
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">analyzeSentiment</span>(<span style="color:#a6e22e">text</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">positiveWords</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;喜欢&#39;</span>, <span style="color:#e6db74">&#39;满意&#39;</span>, <span style="color:#e6db74">&#39;赞&#39;</span>, <span style="color:#e6db74">&#39;好&#39;</span>, <span style="color:#e6db74">&#39;棒&#39;</span>, <span style="color:#e6db74">&#39;推荐&#39;</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">negativeWords</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;失望&#39;</span>, <span style="color:#e6db74">&#39;不满&#39;</span>, <span style="color:#e6db74">&#39;差&#39;</span>, <span style="color:#e6db74">&#39;退款&#39;</span>, <span style="color:#e6db74">&#39;投诉&#39;</span>, <span style="color:#e6db74">&#39;糟糕&#39;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">score</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 计算情绪分数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">positiveWords</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">word</span> =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">text</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#a6e22e">word</span>)) <span style="color:#a6e22e">score</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">negativeWords</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">word</span> =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">text</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#a6e22e">word</span>)) <span style="color:#a6e22e">score</span> <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 返回情绪类别
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">score</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;积极&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">score</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;消极&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;中性&#39;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 处理每条反馈
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">items</span>.<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">item</span> =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sentiment</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">analyzeSentiment</span>(<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">feedback</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">sentiment</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sentiment</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">item</span>;
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Switch节点</strong>：根据情绪分类处理</p>
+<ul>
+<li>积极反馈：保存到&quot;好评集&quot;</li>
+<li>消极反馈：创建客服工单</li>
+<li>中性反馈：保存待分析</li>
+</ul>
+</li>
+<li>
+<p><strong>Slack节点</strong>：发送每日反馈摘要给团队</p>
+</li>
+</ol>
+<p>团队反馈：工作流大大提高了客户反馈处理效率，客服响应时间从平均24小时减少到4小时。</p>
+<h2 id="n8n的限制和解决方案---2024年3月20日">n8n的限制和解决方案 - 2024年3月20日<a hidden class="anchor" aria-hidden="true" href="#n8n的限制和解决方案---2024年3月20日">#</a></h2>
+<p>使用n8n几个月后，也发现了一些限制，记录一下我的解决方案：</p>
+<h3 id="限制1复杂数据转换">限制1：复杂数据转换<a hidden class="anchor" aria-hidden="true" href="#限制1复杂数据转换">#</a></h3>
+<p>当需要进行复杂数据转换时，Function节点的简单JavaScript有时不够用。</p>
+<p><strong>解决方案</strong>：</p>
+<ul>
+<li>创建单独的微服务处理复杂逻辑</li>
+<li>在Function节点中调用该微服务API</li>
+<li>利用多个Function节点分解复杂逻辑</li>
+</ul>
+<h3 id="限制2状态管理">限制2：状态管理<a hidden class="anchor" aria-hidden="true" href="#限制2状态管理">#</a></h3>
+<p>n8n是无状态的，保存工作流状态有时很困难。</p>
+<p><strong>解决方案</strong>：</p>
+<ul>
+<li>使用外部数据库存储状态</li>
+<li>利用文件系统存储简单状态</li>
+<li>设计工作流为&quot;幂等&quot;操作，可重复执行</li>
+</ul>
+<h3 id="限制3复杂调度">限制3：复杂调度<a hidden class="anchor" aria-hidden="true" href="#限制3复杂调度">#</a></h3>
+<p>需要比Schedule节点更复杂的调度逻辑。</p>
+<p><strong>解决方案</strong>：</p>
+<ul>
+<li>使用外部调度系统触发webhook</li>
+<li>创建&quot;元工作流&quot;管理其他工作流的执行</li>
+<li>利用多个条件触发器组合实现复杂逻辑</li>
+</ul>
+<p>笔记：虽然有一些限制，但大多数都有解决方案。n8n的开放性使我们能够通过扩展来克服这些限制。</p>
+<h2 id="我的n8n最佳实践总结---2024年3月25日">我的n8n最佳实践总结 - 2024年3月25日<a hidden class="anchor" aria-hidden="true" href="#我的n8n最佳实践总结---2024年3月25日">#</a></h2>
+<p>经过近两个月的使用，总结了一些个人最佳实践：</p>
+<h3 id="1-工作流设计">1. 工作流设计<a hidden class="anchor" aria-hidden="true" href="#1-工作流设计">#</a></h3>
+<ul>
+<li><strong>单一职责</strong>：每个工作流应只做一件事，但做好</li>
+<li><strong>模块化</strong>：将复杂工作流拆分为多个小工作流</li>
+<li><strong>可重用</strong>：创建通用组件工作流，被其他工作流调用</li>
+<li><strong>可测试</strong>：每个关键节点后添加测试逻辑</li>
+</ul>
+<h3 id="2-错误处理">2. 错误处理<a hidden class="anchor" aria-hidden="true" href="#2-错误处理">#</a></h3>
+<ul>
+<li>每个工作流都添加错误处理机制</li>
+<li>关键节点后添加检查点</li>
+<li>使用try-catch捕获Function节点中的错误</li>
+<li>设置通知机制及时发现问题</li>
+</ul>
+<h3 id="3-文档和注释">3. 文档和注释<a hidden class="anchor" aria-hidden="true" href="#3-文档和注释">#</a></h3>
+<ul>
+<li>为每个工作流创建详细文档</li>
+<li>使用注释节点说明工作流各部分的功能</li>
+<li>记录API调用的预期响应格式</li>
+<li>定期更新文档以反映变化</li>
+</ul>
+<h3 id="4-性能和安全">4. 性能和安全<a hidden class="anchor" aria-hidden="true" href="#4-性能和安全">#</a></h3>
+<ul>
+<li>定期备份工作流</li>
+<li>使用环境变量存储敏感信息</li>
+<li>设置适当的执行超时和重试策略</li>
+<li>监控资源使用情况</li>
+</ul>
+<p>我的n8n使用感受：从最初的好奇尝试到现在的日常依赖，n8n已经成为我提高工作效率的得力助手。它让我把注意力从繁琐的重复任务中解放出来，专注于更有创造性的工作。</p>
+<h2 id="未来计划---2024年3月30日">未来计划 - 2024年3月30日<a hidden class="anchor" aria-hidden="true" href="#未来计划---2024年3月30日">#</a></h2>
+<p>随着我对n8n的熟悉，我有一些未来的计划和想法：</p>
+<h3 id="短期计划">短期计划<a hidden class="anchor" aria-hidden="true" href="#短期计划">#</a></h3>
+<ul>
+<li>探索n8n的REST API，实现程序化控制工作流</li>
+<li>尝试使用Docker Compose部署更稳定的环境</li>
+<li>研究如何与AI工具集成，如OpenAI的API</li>
+</ul>
+<h3 id="中期计划">中期计划<a hidden class="anchor" aria-hidden="true" href="#中期计划">#</a></h3>
+<ul>
+<li>创建自定义节点扩展n8n功能</li>
+<li>构建工作流监控仪表板</li>
+<li>研究如何与现有企业系统深度集成</li>
+</ul>
+<h3 id="长期愿景">长期愿景<a hidden class="anchor" aria-hidden="true" href="#长期愿景">#</a></h3>
+<ul>
+<li>建立完整的自动化生态系统</li>
+<li>在团队中推广自动化文化</li>
+<li>为n8n社区贡献代码或文档</li>
+</ul>
+<p>通过持续学习和实践，我相信n8n将帮助我实现更多自动化的可能性，让我的工作和生活更加高效。</p>
+<hr>
+<h2 id="附录我的常用节点速查表">附录：我的常用节点速查表<a hidden class="anchor" aria-hidden="true" href="#附录我的常用节点速查表">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>节点类型</th>
+          <th>用途</th>
+          <th>配置要点</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Schedule</td>
+          <td>定时触发工作流</td>
+          <td>设置执行频率和时区</td>
+      </tr>
+      <tr>
+          <td>Webhook</td>
+          <td>响应外部请求</td>
+          <td>记录生成的URL</td>
+      </tr>
+      <tr>
+          <td>HTTP Request</td>
+          <td>访问API或网页</td>
+          <td>设置请求方法、头部和认证</td>
+      </tr>
+      <tr>
+          <td>Function</td>
+          <td>处理数据</td>
+          <td>返回数组形式的结果</td>
+      </tr>
+      <tr>
+          <td>IF</td>
+          <td>条件分支</td>
+          <td>使用表达式构建条件</td>
+      </tr>
+      <tr>
+          <td>Send Email</td>
+          <td>发送邮件</td>
+          <td>配置SMTP服务器</td>
+      </tr>
+      <tr>
+          <td>Google Sheets</td>
+          <td>读写表格</td>
+          <td>先创建凭证</td>
+      </tr>
+      <tr>
+          <td>Slack</td>
+          <td>发送消息</td>
+          <td>需要Slack API Token</td>
+      </tr>
+      <tr>
+          <td>HTML</td>
+          <td>生成HTML内容</td>
+          <td>可用于邮件模板</td>
+      </tr>
+      <tr>
+          <td>Error Trigger</td>
+          <td>错误处理</td>
+          <td>与主工作流分开设置</td>
+      </tr>
+  </tbody>
+</table>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://lucky0-gif.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/">自动化工具</a></li>
+      <li><a href="https://lucky0-gif.github.io/tags/%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87/">效率提升</a></li>
+      <li><a href="https://lucky0-gif.github.io/tags/%E5%AE%9E%E8%B7%B5%E8%AE%B0%E5%BD%95/">实践记录</a></li>
+    </ul>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share n8n 笔记 on x"
+            href="https://x.com/intent/tweet/?text=n8n%20%e7%ac%94%e8%ae%b0&amp;url=https%3a%2f%2flucky0-gif.github.io%2ffeatured-diary%2fn8n-notes%2f&amp;hashtags=%e8%87%aa%e5%8a%a8%e5%8c%96%e5%b7%a5%e5%85%b7%2c%e6%95%88%e7%8e%87%e6%8f%90%e5%8d%87%2c%e5%ae%9e%e8%b7%b5%e8%ae%b0%e5%bd%95">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share n8n 笔记 on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2flucky0-gif.github.io%2ffeatured-diary%2fn8n-notes%2f&amp;title=n8n%20%e7%ac%94%e8%ae%b0&amp;summary=n8n%20%e7%ac%94%e8%ae%b0&amp;source=https%3a%2f%2flucky0-gif.github.io%2ffeatured-diary%2fn8n-notes%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share n8n 笔记 on reddit"
+            href="https://reddit.com/submit?url=https%3a%2f%2flucky0-gif.github.io%2ffeatured-diary%2fn8n-notes%2f&title=n8n%20%e7%ac%94%e8%ae%b0">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share n8n 笔记 on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2flucky0-gif.github.io%2ffeatured-diary%2fn8n-notes%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share n8n 笔记 on whatsapp"
+            href="https://api.whatsapp.com/send?text=n8n%20%e7%ac%94%e8%ae%b0%20-%20https%3a%2f%2flucky0-gif.github.io%2ffeatured-diary%2fn8n-notes%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share n8n 笔记 on telegram"
+            href="https://telegram.me/share/url?text=n8n%20%e7%ac%94%e8%ae%b0&amp;url=https%3a%2f%2flucky0-gif.github.io%2ffeatured-diary%2fn8n-notes%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share n8n 笔记 on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=n8n%20%e7%ac%94%e8%ae%b0&u=https%3a%2f%2flucky0-gif.github.io%2ffeatured-diary%2fn8n-notes%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://lucky0-gif.github.io/">DoJo</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
