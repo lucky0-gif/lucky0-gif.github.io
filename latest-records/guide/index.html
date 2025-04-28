@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>图片展示示例 | DoJo</title>
-<meta name="keywords" content="教程, Markdown, 图片, 指南">
+<meta name="keywords" content="Markdown, 图片教程, 指南">
 <meta name="description" content="展示如何在博客文章中添加和显示图片的示例">
 <meta name="author" content="">
 <link rel="canonical" href="https://lucky0-gif.github.io/latest-records/guide/">
@@ -64,9 +64,8 @@
     <meta property="article:section" content="latest-records">
     <meta property="article:published_time" content="2023-07-15T14:00:00+08:00">
     <meta property="article:modified_time" content="2023-07-15T14:00:00+08:00">
-    <meta property="article:tag" content="教程">
     <meta property="article:tag" content="Markdown">
-    <meta property="article:tag" content="图片">
+    <meta property="article:tag" content="图片教程">
     <meta property="article:tag" content="指南">
     <meta property="og:image" content="https://lucky0-gif.github.io/images/sample.svg">
 <meta name="twitter:card" content="summary_large_image">
@@ -103,7 +102,7 @@
   "name": "图片展示示例",
   "description": "展示如何在博客文章中添加和显示图片的示例",
   "keywords": [
-    "教程", "Markdown", "图片", "指南"
+    "Markdown", "图片教程", "指南"
   ],
   "articleBody": "图片展示示例 这篇文章展示了如何在Hugo博客中添加和显示图片。下面是几种不同的方法：\n1. 使用静态资源目录中的图片 这张图片存储在 static/images/ 目录下：\n这种方法适合多篇文章共享的图片资源。图片URL路径以 / 开头，表示从网站根目录开始。\n2. 使用页面资源（Page Bundle） 当你需要将图片与特定文章关联时，可以使用页面资源方法。在这种情况下，你需要：\n创建一个与文章同名的目录（如本文的 image-demo） 在该目录中创建 index.md 作为文章内容 将图片放在同一目录中 注意：由于这只是一个演示，实际上我们没有在这个目录中放置图片文件。在实际使用时，你可以添加图片并使用相对路径引用它们。\n如果我们在这个目录中有一张名为 local-image.jpg 的图片，可以这样引用：\n![本地图片](local-image.jpg \"本地图片标题\") 3. 使用封面图片 本文使用了封面图片，这是在文章前言（Front Matter）中设置的：\ncover: image: \"/images/sample.svg\" # 图片路径 alt: \"示例封面图片\" # 替代文本 caption: \"这是一个SVG示例图片\" # 图片标题 relative: false # false表示使用绝对路径 图片最佳实践 添加替代文本：始终为图片添加有意义的替代文本，这对于可访问性和SEO都很重要 优化图片大小：压缩图片以提高网站加载速度 使用适当的格式： JPG：适合照片 PNG：适合需要透明背景的图片 SVG：适合图标和简单图形（可缩放） WebP：现代格式，提供更好的压缩 更多信息 有关在博客中添加图片的更多详细信息，请参阅如何在博客中添加插图指南。\n",
   "wordCount" : "57",
@@ -263,9 +262,8 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://lucky0-gif.github.io/tags/%E6%95%99%E7%A8%8B/">教程</a></li>
       <li><a href="https://lucky0-gif.github.io/tags/markdown/">Markdown</a></li>
-      <li><a href="https://lucky0-gif.github.io/tags/%E5%9B%BE%E7%89%87/">图片</a></li>
+      <li><a href="https://lucky0-gif.github.io/tags/%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/">图片教程</a></li>
       <li><a href="https://lucky0-gif.github.io/tags/%E6%8C%87%E5%8D%97/">指南</a></li>
     </ul>
 <nav class="paginav">
@@ -280,7 +278,7 @@
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share 图片展示示例 on x"
-            href="https://x.com/intent/tweet/?text=%e5%9b%be%e7%89%87%e5%b1%95%e7%a4%ba%e7%a4%ba%e4%be%8b&amp;url=https%3a%2f%2flucky0-gif.github.io%2flatest-records%2fguide%2f&amp;hashtags=%e6%95%99%e7%a8%8b%2cMarkdown%2c%e5%9b%be%e7%89%87%2c%e6%8c%87%e5%8d%97">
+            href="https://x.com/intent/tweet/?text=%e5%9b%be%e7%89%87%e5%b1%95%e7%a4%ba%e7%a4%ba%e4%be%8b&amp;url=https%3a%2f%2flucky0-gif.github.io%2flatest-records%2fguide%2f&amp;hashtags=Markdown%2c%e5%9b%be%e7%89%87%e6%95%99%e7%a8%8b%2c%e6%8c%87%e5%8d%97">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
