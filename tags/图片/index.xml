@@ -10,10 +10,10 @@
     <atom:link href="https://lucky0-gif.github.io/tags/%E5%9B%BE%E7%89%87/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>添加插图指南</title>
-      <link>https://lucky0-gif.github.io/latest-records/adding-images-guide/adding-images-guide/</link>
+      <link>https://lucky0-gif.github.io/latest-records/adding-images-guide/</link>
       <pubDate>Sat, 15 Jul 2023 10:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/latest-records/adding-images-guide/adding-images-guide/</guid>
-      <description>详细介绍如何在博客文章中添加和管理插图</description>
+      <guid>https://lucky0-gif.github.io/latest-records/adding-images-guide/</guid>
+      <description>详细介绍如何在文章中添加和管理插图</description>
     </item>
   </channel>
 </rss>
