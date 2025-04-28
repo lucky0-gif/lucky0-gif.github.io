@@ -148,6 +148,29 @@
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://lucky0-gif.github.io/images/sample.svg" alt="示例封面图片">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">图片展示示例
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>图片展示示例 这篇文章展示了如何在Hugo博客中添加和显示图片。下面是几种不同的方法：
+1. 使用静态资源目录中的图片 这张图片存储在 static/images/ 目录下：
+这种方法适合多篇文章共享的图片资源。图片URL路径以 / 开头，表示从网站根目录开始。
+2. 使用页面资源（Page Bundle） 当你需要将图片与特定文章关联时，可以使用页面资源方法。在这种情况下，你需要：
+创建一个与文章同名的目录（如本文的 image-demo） 在该目录中创建 index.md 作为文章内容 将图片放在同一目录中 注意：由于这只是一个演示，实际上我们没有在这个目录中放置图片文件。在实际使用时，你可以添加图片并使用相对路径引用它们。
+如果我们在这个目录中有一张名为 local-image.jpg 的图片，可以这样引用：
+![本地图片](local-image.jpg &#34;本地图片标题&#34;) 3. 使用封面图片 本文使用了封面图片，这是在文章前言（Front Matter）中设置的：
+cover: image: &#34;/images/sample.svg&#34; # 图片路径 alt: &#34;示例封面图片&#34; # 替代文本 caption: &#34;这是一个SVG示例图片&#34; # 图片标题 relative: false # false表示使用绝对路径 图片最佳实践 添加替代文本：始终为图片添加有意义的替代文本，这对于可访问性和SEO都很重要 优化图片大小：压缩图片以提高网站加载速度 使用适当的格式： JPG：适合照片 PNG：适合需要透明背景的图片 SVG：适合图标和简单图形（可缩放） WebP：现代格式，提供更好的压缩 更多信息 有关在博客中添加图片的更多详细信息，请参阅如何在博客中添加插图指南。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-07-15 14:00:00 +0800 CST'>July 15, 2023</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to 图片展示示例" href="https://lucky0-gif.github.io/latest-records/guide/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
     <h2 class="entry-hint-parent">我的AI『探索』：不止于工具，更像是个『赛博邻居』的碎碎念 
     </h2>
