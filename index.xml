@@ -6,35 +6,21 @@
     <description>Recent content on DoJo</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 27 Apr 2025 21:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 28 Apr 2025 09:00:00 +0800</lastBuildDate>
     <atom:link href="https://lucky0-gif.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>图片展示示例</title>
-      <link>https://lucky0-gif.github.io/latest-records/image-display-example/</link>
-      <pubDate>Sat, 15 Jul 2023 14:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/latest-records/image-display-example/</guid>
-      <description>展示如何在文章中添加和显示图片的示例</description>
+      <title>n8n进阶教程：打造企业级自动化工作流</title>
+      <link>https://lucky0-gif.github.io/featured-diary/n8n-advanced-notes/</link>
+      <pubDate>Mon, 28 Apr 2025 09:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/featured-diary/n8n-advanced-notes/</guid>
+      <description>深入探索n8n的高级功能与企业级应用场景，包括复杂工作流设计、性能优化、安全最佳实践、与AI集成等进阶主题</description>
     </item>
     <item>
-      <title>添加插图指南</title>
-      <link>https://lucky0-gif.github.io/latest-records/adding-images-guide/</link>
-      <pubDate>Sat, 15 Jul 2023 10:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/latest-records/adding-images-guide/</guid>
-      <description>详细介绍如何在文章中添加和管理插图</description>
-    </item>
-    <item>
-      <title>我的AI『探索』：不止于工具，更像是个『赛博邻居』的碎碎念 </title>
-      <link>https://lucky0-gif.github.io/latest-records/ai-opinion/</link>
-      <pubDate>Sun, 27 Apr 2025 21:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/latest-records/ai-opinion/</guid>
-      <description>一位普通用户的AI体验笔记：聊聊AI如何像&amp;#39;赛博邻居&amp;#39;一样融入生活与工作，分享使用AI工具的实用心得、趣闻轶事、人机互动的微妙感受，以及对未来的畅想与思考。</description>
-    </item>
-    <item>
-      <title>加密货币投资实录</title>
-      <link>https://lucky0-gif.github.io/latest-records/crypto-diary/</link>
-      <pubDate>Tue, 22 Apr 2025 21:00:00 +0800</pubDate>
-      <guid>https://lucky0-gif.github.io/latest-records/crypto-diary/</guid>
-      <description>加密货币投资实录：现货、杠杆与合约的真实体验</description>
+      <title>n8n进阶教程：打造企业级自动化工作流</title>
+      <link>https://lucky0-gif.github.io/latest-records/n8n-advanced-notes/</link>
+      <pubDate>Mon, 28 Apr 2025 09:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/latest-records/n8n-advanced-notes/</guid>
+      <description>深入探索n8n的高级功能与企业级应用场景，包括复杂工作流设计、性能优化、安全最佳实践、与AI集成等进阶主题</description>
     </item>
     <item>
       <title>n8n 笔记</title>
@@ -51,9 +37,37 @@
       <description>记录我与自动化工具 n8n 的第一次亲密接触，从好奇到动手，关于探索、实现与创造的起点</description>
     </item>
     <item>
+      <title>加密货币投资实录</title>
+      <link>https://lucky0-gif.github.io/latest-records/crypto-diary/</link>
+      <pubDate>Tue, 22 Apr 2025 21:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/latest-records/crypto-diary/</guid>
+      <description>加密货币投资实录：现货、杠杆与合约的真实体验</description>
+    </item>
+    <item>
+      <title>AI『探索』：不止于工具，更像是个『赛博邻居』的碎碎念 </title>
+      <link>https://lucky0-gif.github.io/latest-records/ai-opinion/</link>
+      <pubDate>Wed, 16 Apr 2025 21:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/latest-records/ai-opinion/</guid>
+      <description>一位普通用户的AI体验笔记：聊聊AI如何像&amp;#39;赛博邻居&amp;#39;一样融入生活与工作，分享使用AI工具的实用心得、趣闻轶事、人机互动的微妙感受，以及对未来的畅想与思考。</description>
+    </item>
+    <item>
+      <title>图片展示示例</title>
+      <link>https://lucky0-gif.github.io/latest-records/image-display-example/</link>
+      <pubDate>Sat, 05 Apr 2025 14:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/latest-records/image-display-example/</guid>
+      <description>展示如何在文章中添加和显示图片的示例</description>
+    </item>
+    <item>
+      <title>添加插图指南</title>
+      <link>https://lucky0-gif.github.io/latest-records/adding-images-guide/</link>
+      <pubDate>Sun, 06 Apr 2025 10:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/latest-records/adding-images-guide/</guid>
+      <description>详细介绍如何在文章中添加和管理插图</description>
+    </item>
+    <item>
       <title>从这里开始</title>
       <link>https://lucky0-gif.github.io/latest-records/first-article/</link>
-      <pubDate>Sat, 22 Mar 2025 21:00:00 +0800</pubDate>
+      <pubDate>Tue, 01 Apr 2025 21:00:00 +0800</pubDate>
       <guid>https://lucky0-gif.github.io/latest-records/first-article/</guid>
       <description>写给这个空间的第一句话，关于起步、迟疑与终于开始</description>
     </item>

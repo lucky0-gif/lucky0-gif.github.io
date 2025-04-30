@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>留言板 on DoJo</title>
-    <link>https://lucky0-gif.github.io/message-board/</link>
-    <description>Recent content in 留言板 on DoJo</description>
+    <title>实践记录 on DoJo</title>
+    <link>https://lucky0-gif.github.io/practice-records/</link>
+    <description>Recent content in 实践记录 on DoJo</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>zh-cn</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://lucky0-gif.github.io/message-board/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lucky0-gif.github.io/practice-records/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

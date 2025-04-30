@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>工作流优化 on DoJo</title>
+    <link>https://lucky0-gif.github.io/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%BC%98%E5%8C%96/</link>
+    <description>Recent content in 工作流优化 on DoJo</description>
+    <generator>Hugo -- 0.146.5</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 28 Apr 2025 09:00:00 +0800</lastBuildDate>
+    <atom:link href="https://lucky0-gif.github.io/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>n8n进阶教程：打造企业级自动化工作流</title>
+      <link>https://lucky0-gif.github.io/featured-diary/n8n-advanced-notes/</link>
+      <pubDate>Mon, 28 Apr 2025 09:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/featured-diary/n8n-advanced-notes/</guid>
+      <description>深入探索n8n的高级功能与企业级应用场景，包括复杂工作流设计、性能优化、安全最佳实践、与AI集成等进阶主题</description>
+    </item>
+    <item>
+      <title>n8n进阶教程：打造企业级自动化工作流</title>
+      <link>https://lucky0-gif.github.io/latest-records/n8n-advanced-notes/</link>
+      <pubDate>Mon, 28 Apr 2025 09:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/latest-records/n8n-advanced-notes/</guid>
+      <description>深入探索n8n的高级功能与企业级应用场景，包括复杂工作流设计、性能优化、安全最佳实践、与AI集成等进阶主题</description>
+    </item>
+  </channel>
+</rss>

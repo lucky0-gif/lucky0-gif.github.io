@@ -6,8 +6,15 @@
     <description>Recent content in 精选日记 on DoJo</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 22 Apr 2025 21:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 28 Apr 2025 09:00:00 +0800</lastBuildDate>
     <atom:link href="https://lucky0-gif.github.io/featured-diary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>n8n进阶教程：打造企业级自动化工作流</title>
+      <link>https://lucky0-gif.github.io/featured-diary/n8n-advanced-notes/</link>
+      <pubDate>Mon, 28 Apr 2025 09:00:00 +0800</pubDate>
+      <guid>https://lucky0-gif.github.io/featured-diary/n8n-advanced-notes/</guid>
+      <description>深入探索n8n的高级功能与企业级应用场景，包括复杂工作流设计、性能优化、安全最佳实践、与AI集成等进阶主题</description>
+    </item>
     <item>
       <title>n8n 笔记</title>
       <link>https://lucky0-gif.github.io/featured-diary/n8n-notes/</link>

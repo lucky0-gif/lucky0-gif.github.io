@@ -62,8 +62,8 @@
   <meta property="og:locale" content="zh-cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="latest-records">
-    <meta property="article:published_time" content="2023-07-15T10:00:00+08:00">
-    <meta property="article:modified_time" content="2023-07-15T10:00:00+08:00">
+    <meta property="article:published_time" content="2025-04-06T10:00:00+08:00">
+    <meta property="article:modified_time" content="2025-04-06T10:00:00+08:00">
     <meta property="article:tag" content="教程">
     <meta property="article:tag" content="Markdown">
     <meta property="article:tag" content="图片">
@@ -106,8 +106,8 @@
   "articleBody": "添加插图的方法 在这个Hugo中添加插图有几种方法，下面详细介绍每种方法的使用场景和步骤。\n方法一：使用文章资源捆绑（推荐） 这是Hugo推荐的方式，将图片与文章放在同一个目录中：\n创建一个与文章同名的目录（如 my-post） 在该目录中创建 index.md 作为文章内容 将图片放在同一目录中 在Markdown中引用图片： ![图片描述](image.jpg \"图片标题\") 优点：\n图片与文章关联明确 便于管理和组织 支持Hugo的图片处理功能 方法二：使用静态资源目录 将图片放在 static/images/ 目录下（需要创建此目录） 在Markdown中引用图片： ![图片描述](/images/image.jpg \"图片标题\") 优点：\n适合多篇文章共享的图片 路径简单直观 方法三：使用封面图片 在文章前言（Front Matter）中设置封面图片：\n--- title: \"文章标题\" cover: image: \"cover.jpg\" # 图片路径，可以是相对路径或绝对路径 alt: \"封面图片描述\" # 替代文本 caption: \"图片标题\" # 图片标题 relative: true # 如果为true，则路径相对于文章目录 --- 图片格式和优化 支持的格式：JPG、PNG、GIF、WebP 建议图片宽度不超过1500像素 压缩图片以提高加载速度 添加有意义的替代文本(alt)以提高可访问性 示例 以下是一个完整的示例：\n--- title: \"我的旅行记录\" date: 2023-07-10 cover: image: \"cover.jpg\" alt: \"旅行照片\" caption: \"美丽的风景\" relative: true --- ## 旅行第一天 今天我们参观了当地的博物馆。 ![博物馆外观](museum.jpg \"当地历史博物馆\") 博物馆里有许多有趣的展品... 目录结构示例 content/\rposts/\rmy-travel-post/\rindex.md # 文章内容\rcover.jpg # 封面图片\rmuseum.jpg # 文章中引用的图片\rother-photo.jpg # 其他图片 注意事项 图片文件名避免使用空格和特殊字符 保持合理的图片大小，过大的图片会影响网站加载速度 添加有意义的替代文本和标题，有助于SEO和可访问性 考虑版权问题，使用自己的图片或有适当许可的图片 ",
   "wordCount" : "100",
   "inLanguage": "en",
-  "datePublished": "2023-07-15T10:00:00+08:00",
-  "dateModified": "2023-07-15T10:00:00+08:00",
+  "datePublished": "2025-04-06T10:00:00+08:00",
+  "dateModified": "2025-04-06T10:00:00+08:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://lucky0-gif.github.io/latest-records/adding-images-guide/"
@@ -170,13 +170,13 @@
                 </a>
             </li>
             <li>
-                <a href="https://lucky0-gif.github.io/featured-diary/" title="精选日记">
-                    <span>精选日记</span>
+                <a href="https://lucky0-gif.github.io/featured-diary/" title="精选笔记">
+                    <span>精选笔记</span>
                 </a>
             </li>
             <li>
-                <a href="https://lucky0-gif.github.io/my-footprints/" title="我的足迹">
-                    <span>我的足迹</span>
+                <a href="https://lucky0-gif.github.io/practice-records" title="实践记录">
+                    <span>实践记录</span>
                 </a>
             </li>
             <li>
@@ -187,11 +187,6 @@
             <li>
                 <a href="https://lucky0-gif.github.io/about-me/" title="关于我">
                     <span>关于我</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://lucky0-gif.github.io/message-board/" title="留言板">
-                    <span>留言板</span>
                 </a>
             </li>
         </ul>
@@ -208,7 +203,7 @@
     <div class="post-description">
       详细介绍如何在文章中添加和管理插图
     </div>
-    <div class="post-meta"><span title='2023-07-15 10:00:00 +0800 CST'>July 15, 2023</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2025-04-06 10:00:00 +0800 CST'>April 6, 2025</span>&nbsp;·&nbsp;1 min
 
 </div>
   </header> 
@@ -308,10 +303,10 @@
     <br>
     <span>图片展示示例</span>
   </a>
-  <a class="next" href="https://lucky0-gif.github.io/latest-records/ai-opinion/">
+  <a class="next" href="https://lucky0-gif.github.io/latest-records/first-article/">
     <span class="title">Next »</span>
     <br>
-    <span>我的AI『探索』：不止于工具，更像是个『赛博邻居』的碎碎念 </span>
+    <span>从这里开始</span>
   </a>
 </nav>
 
@@ -383,7 +378,21 @@
     </li>
 </ul>
 
-  </footer>
+  </footer><script src="https://giscus.app/client.js" 
+        data-repo="lucky0-gif/lucky0-gif.github.io" 
+        data-repo-id="R_kgDOOcfrpQ" 
+        data-category="Announcements" 
+        data-category-id="DIC_kwDOOcfrpc4Cpkfg" 
+        data-mapping="pathname" 
+        data-strict="0" 
+        data-reactions-enabled="1" 
+        data-emit-metadata="0" 
+        data-input-position="top" 
+        data-theme="preferred_color_scheme" 
+        data-lang="zh-CN" 
+        crossorigin="anonymous" 
+        async>
+</script>
 </article>
     </main>
     
